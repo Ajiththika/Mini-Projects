@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+
+    <div class="input-group">
+      <label>Username</label>
+      <input type="text" id="username" placeholder="Enter username">
+    </div>
+
+    <div class="input-group password-wrap">
+      <label>Password</label>
+      <input type="password" id="password" placeholder="Enter password">
+      <span class="eye" id="togglePass">Show</span>
+    </div>
+
+    <div class="requirements" id="reqBox" style="display:none;">
+      <p id="ruleLength">Length 6+</p>
+      <p id="ruleUpper">Uppercase</p>
+      <p id="ruleNumber">Number</p>
+      <p id="ruleSpecial">Special Character</p>
+    </div>
+
+    <button id="loginBtn">Login</button>
+    <div class="msg" id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

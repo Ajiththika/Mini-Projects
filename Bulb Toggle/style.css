@@ -1,0 +1,24 @@
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.bulbs {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.bulb {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: gray;
+    border: 3px solid #444;
+    transition: 0.3s;
+}
+
+.bulb.on {
+    background: yellow;
+    box-shadow: 0 0 20px yellow;
+}
