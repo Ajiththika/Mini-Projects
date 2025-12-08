@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- modify image -->
+    <img id="img" src="./" alt="hero">
+
+    <ul id="list">
+    </ul>
+    <p id="removeMe">Delete this</p>
+    <script>
+        // modify image
+        document.getElementById("img").setAttribute("src", "man.js");
+        const srcValue = document.getElementById("img").getAttribute("src");
+        console.log(srcValue);
+        document.getElementById("img").removeAttribute("src");
+
+
+        //create element if we called appendchild it create a elemnent like a child 
+        const li = document.createElement("li");
+        li.textContent ="New item";
+        document.getElementById("list").appendChild(li);
+
+        // remove element
+        const box= document.getElementById("removeMe");
+        box.remove()
+    </script>
+</body>
+</html>

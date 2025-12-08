@@ -39,6 +39,7 @@ input {
     font-size:15px;
     background:#fafafa;
     transition:0.2s;
+    align-items: center;
 }
 
 input:focus {
