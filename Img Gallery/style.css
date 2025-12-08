@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.gallery-container {
+  text-align: center;
+}
+
+#mainImage {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+}
+
+.pictures img {
+  width: 100px;
+  height: 75px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  transition: border 0.3s;
+}
+
+.pictures img:hover {
+  border: 2px solid #007BFF;
+}
+
+.pictures img.active {
+  border: 2px solid #007BFF;
+}
