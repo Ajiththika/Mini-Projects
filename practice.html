@@ -28,6 +28,13 @@
         // remove element
         const box= document.getElementById("removeMe");
         box.remove()
+
+        //call back fuction
+        function sayHi() {
+            console.log("Hi after 2 seconds!")
+        }
+
+        setTimeout(sayHi, 3000); // 3s = 3000
     </script>
 </body>
 </html>
